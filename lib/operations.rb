@@ -1,7 +1,7 @@
 def unsafe?(speed)
   ans = nil
   speed > 60 ? ans = TRUE : nil
-  speed < 40 ? ans = FALSE : nil
+  speed < 40 ? ans = TRUE : nil
   speed >= 40 && speed <= 60 ? ans = FALSE : nil
   ans
 end
