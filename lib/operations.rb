@@ -1,16 +1,13 @@
 def unsafe?(speed)
-  ans = nil
-  speed > 60 ? ans = TRUE : nil
-  speed < 40 ? ans = TRUE : nil
-  speed >= 40 && speed <= 60 ? ans = FALSE : nil
-  ans
+  if (speed >= 40 && speed <= 60)
+    FALSE
+  else
+    TRUE
+  end
 end
 
 
 
 def not_safe?(speed)
-	
+  speed >= 40 && speed <= 60 ? ans = FALSE : TRUE
 end
-	
-
-
